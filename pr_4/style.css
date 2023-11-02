@@ -1,0 +1,175 @@
+*{
+    font-family: 'TT Lakes Condensed';
+}
+
+
+.aside{
+    position: absolute;
+    left: -250px;
+    top: 0;
+    min-width: 250px;
+    width: 250px;
+    height: 811px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 10px rgb(82, 143, 184));
+    transition: all 0.3s;
+}
+
+.aside-active{
+    left: 0;
+    transition: all 0.3s;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.buttons{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#open{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.buttons img{
+    height: 20px;
+    width: auto;
+    align-items: center;
+}
+
+.buttons:active{
+    cursor: pointer;
+    transform: scale(0.96);
+}
+.buttons:hover {
+    background-color: #ffc9d9;
+}
+
+.buttons:disabled {
+    background-color: #dfdfdf;
+}
+
+.buttons:disabled:hover {
+    animation: shakeX 1s; 
+}
+
+.img{
+    max-width: 95px;
+    height: auto;
+}
+
+.header_right{
+    align-items: center;
+    gap: 5px;
+}
+
+.button{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    border: none;
+    align-items: center;
+    
+}
+
+.button:active{
+    cursor: pointer;
+    transform: scale(0.96);
+}
+
+.button img{
+    height: 20px;
+    width: auto;
+}
+
+.main{
+    height: auto;
+    display: grid;
+    grid-template-columns: 15pc;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.benefits{
+    gap: 10px;
+}
+
+.active{
+    cursor: pointer;
+}
+
+.active:hover{
+    color: rgb(146, 146, 146);
+}
+
+.active--active-link{
+    border-left: solid 2px #41f6d6;
+    padding-left: 15px;
+    transform: scale(0.96);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.footer p{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer p:hover{
+    color: #FF3E79;
+}
+
+.text{
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.text:hover{
+    color: #FF3E79;
+}
+
+.button_current{
+    background-color: white;
+    border: none;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button_current:hover {
+    color: #FF3E79;
+}
+
